@@ -1300,13 +1300,17 @@ self.C3_ExpressionFuncs = [
 			const n0 = p._GetNode(0);
 			return () => (n0.ExpObject() - 200);
 		},
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			return () => v0.GetValue();
+		},
 		() => 0,
-		() => -400,
 		() => 1,
-		() => "ferido",
+		() => -400,
 		() => "pulando",
 		() => "parado",
-		() => "andando"
+		() => "andando",
+		() => 10
 ];
 
 

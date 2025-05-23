@@ -16,9 +16,12 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.Scroll,
 		C3.Plugins.Sprite.Exps.X,
 		C3.Plugins.Sprite.Exps.Y,
+		C3.Plugins.Text.Acts.SetText,
 		C3.Plugins.Sprite.Cnds.OnCollision,
 		C3.Plugins.System.Acts.RestartLayout,
+		C3.Plugins.System.Acts.SetVar,
 		C3.Plugins.Sprite.Acts.Destroy,
+		C3.Plugins.System.Acts.AddVar,
 		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Behaviors.Pin.Acts.PinByImagePoint,
 		C3.Behaviors.Platform.Cnds.IsFalling,
@@ -27,14 +30,15 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Platform.Acts.SetDefaultControls,
 		C3.Plugins.System.Acts.Wait,
 		C3.Plugins.System.Acts.GoToLayout,
-		C3.Plugins.Sprite.Acts.SetAnim,
 		C3.Plugins.Sprite.Acts.SetPosToObject,
 		C3.Plugins.Keyboard.Cnds.OnKey,
 		C3.Plugins.Sprite.Acts.SetMirrored,
 		C3.Behaviors.Platform.Cnds.OnJump,
+		C3.Plugins.Sprite.Acts.SetAnim,
 		C3.Behaviors.Platform.Cnds.OnLand,
 		C3.Behaviors.Platform.Cnds.OnMove,
 		C3.Behaviors.Platform.Cnds.OnStop,
+		C3.Plugins.System.Cnds.Compare,
 		C3.Plugins.Button.Cnds.OnClicked
 	];
 };
@@ -72,7 +76,9 @@ self.C3_JsPropNameTable = [
 	{inimigo4: 0},
 	{jogadoranim: 0},
 	{Teclado: 0},
-	{BCO10c7c6147cc9400081931447aefe5d88removebgpreview: 0}
+	{BCO10c7c6147cc9400081931447aefe5d88removebgpreview: 0},
+	{Texto3: 0},
+	{pontos: 0}
 ];
 
 self.InstanceType = {
@@ -103,5 +109,6 @@ self.InstanceType = {
 	inimigo4: class extends self.ISpriteInstance {},
 	jogadoranim: class extends self.ISpriteInstance {},
 	Teclado: class extends self.IInstance {},
-	BCO10c7c6147cc9400081931447aefe5d88removebgpreview: class extends self.ISpriteInstance {}
+	BCO10c7c6147cc9400081931447aefe5d88removebgpreview: class extends self.ISpriteInstance {},
+	Texto3: class extends self.ITextInstance {}
 }
